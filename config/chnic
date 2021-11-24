@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sed -i 's/eth0/enp1s0/g' gen_tls-ecdsa.sh
+sed -i 's/eth0/enp1s0/g' gen_tls.sh
