@@ -5,7 +5,7 @@ docker container stop nginx
 docker container rm nginx
 
 
-docker container run -d --rm --name nginx --network _sources_default\
+docker container run -d --rm --name nginx --network tools_default\
        -p 80:80 -p 443:443 \
        -v $(pwd)/config/ssl.conf:/etc/nginx/conf.d/ssl.conf \
        -v $(pwd)/config/server1.crt:/etc/nginx/conf.d/server1.crt \
